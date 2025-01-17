@@ -12,12 +12,7 @@ import (
 var versionCmd = &cobra.Command{
 	Use:   "version",
 	Short: "A Version of IP-Tracker",
-	Long: `A longer description that spans multiple lines and likely contains examples
-and usage of using your command. For example:
-
-Cobra is a CLI library for Go that empowers applications.
-This application is a tool to generate the needed files
-to quickly create a Cobra application.`,
+	Long: `This command will provide current version of IP-Tracker CLI APp`,
 	Run: func(cmd *cobra.Command, args []string) {
 		c := color.New(color.FgGreen).Add(color.Underline).Add(color.Bold)
 		c.Println("v1.0.0")
